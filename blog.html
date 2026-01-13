@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjai's Blog - Anjai's World</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Blog-specific styles */
+        .blog-hero {
+            padding: 100px 20px;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(45, 80, 22, 0.8) 0%, rgba(61, 107, 31, 0.8) 100%);
+            position: relative;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .blog-hero h1 {
+            font-size: 3.5rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .blog-hero p {
+            font-size: 1.3rem;
+            color: var(--cream);
+            max-width: 600px;
+        }
+
+        .blog-container {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .blog-post {
+            background: rgba(45, 80, 22, 0.6);
+            border: 2px solid var(--gold);
+            border-radius: 10px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .blog-post-header {
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 20px;
+        }
+
+        .blog-post-title {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 10px;
+            font-family: var(--main-font);
+        }
+
+        .blog-post-meta {
+            display: flex;
+            gap: 20px;
+            font-size: 1rem;
+            color: var(--lime-green);
+        }
+
+        .blog-post-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .blog-post-content {
+            color: var(--cream);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .blog-post-content p {
+            margin-bottom: 20px;
+        }
+
+        .blog-post-content h3 {
+            color: var(--gold);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .blog-post-content ul {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .blog-post-content li {
+            margin-bottom: 10px;
+            color: var(--cream);
+        }
+
+        .blog-posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .blog-card {
+            background: rgba(45, 80, 22, 0.6);
+            border: 2px solid var(--gold);
+            border-radius: 10px;
+            padding: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(212, 175, 55, 0.3);
+            border-color: var(--lime-green);
+        }
+
+        .blog-card-title {
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .blog-card-excerpt {
+            color: var(--cream);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .blog-card-date {
+            color: var(--lime-green);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            background: rgba(212, 175, 55, 0.2);
+            border: 2px solid var(--gold);
+            color: var(--gold);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .back-button:hover {
+            background: var(--gold);
+            color: var(--kokiri-green);
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="forest-background">
+        <div class="leaf leaf-1"></div>
+        <div class="leaf leaf-2"></div>
+        <div class="leaf leaf-3"></div>
+        <div class="leaf leaf-4"></div>
+        <div class="leaf leaf-5"></div>
+        <div class="sparkle sparkle-1"></div>
+        <div class="sparkle sparkle-2"></div>
+        <div class="sparkle sparkle-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🌿</span>
+                <span class="logo-text">Anjai's World</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero Section -->
+    <section class="blog-hero">
+        <div>
+            <h1>Anjai's Blog</h1>
+            <p>Tales from the enchanted forest and adventures in legendary games</p>
+        </div>
+    </section>
+
+    <!-- Main Blog Post -->
+    <div class="blog-container">
+        <a href="index.html" class="back-button">← Back to Home</a>
+        
+        <article class="blog-post">
+            <div class="blog-post-header">
+                <h2 class="blog-post-title">The Legend of Zelda: A Journey Worth Taking</h2>
+                <div class="blog-post-meta">
+                    <span>📅 January 10, 2026</span>
+                    <span>👤 Anjai</span>
+                    <span>🎮 Gaming</span>
+                </div>
+            </div>
+            <div class="blog-post-content">
+                <p>If you haven't experienced The Legend of Zelda series, you're missing out on one of the most incredible gaming franchises ever created. Let me tell you why this series has captured my heart and why I believe it deserves a special place in every gamer's collection.</p>
+
+                <h3>What Makes Zelda Special?</h3>
+                <p>The Legend of Zelda series stands out for its perfect blend of exploration, puzzle-solving, and combat. Each game presents you with a world full of mysteries waiting to be uncovered. The level design is masterful, with dungeons that feel like intricate puzzles where every room teaches you something new.</p>
+
+                <h3>The Power of Storytelling</h3>
+                <p>The narrative depth in Zelda games is extraordinary. You're not just playing a character; you're part of an epic tale that spans centuries. The lore is rich and interconnected, with secrets hidden throughout each game that reward exploration and curiosity. Whether you're discovering ancient ruins or speaking with peculiar NPCs, there's always something meaningful to find.</p>
+
+                <p>The environmental storytelling is particularly impressive. Abandoned temples tell stories of civilizations long past, and the landscape itself narrates the world's history. You feel like an archaeologist uncovering mysteries rather than just a player following a linear path.</p>
+
+                <h3>Key Elements That Keep Me Coming Back</h3>
+                <ul>
+                    <li><strong>Innovative Gameplay:</strong> Each game introduces new mechanics that make exploring feel fresh and exciting.</li>
+                    <li><strong>Memorable Music:</strong> The soundtracks are absolutely iconic and instantly recognizable.</li>
+                    <li><strong>Satisfying Puzzles:</strong> Solving dungeons gives an incredible sense of accomplishment.</li>
+                    <li><strong>Engaging World Design:</strong> The worlds are hand-crafted with purpose, not filled with meaningless content.</li>
+                    <li><strong>Creative Challenges:</strong> Boss battles are unique encounters that test your skills and creativity.</li>
+                </ul>
+
+                <h3>Looking Forward</h3>
+                <p>Whether you're a longtime fan or just starting your Zelda journey, I encourage you to dive in. Start with the games that interest you most, explore every corner, talk to every NPC, and don't be afraid to get stuck—sometimes the most memorable gaming moments come from figuring out a puzzle yourself.</p>
+
+                <p>The Legend of Zelda series isn't just about slaying monsters or collecting items; it's about the adventure, the discovery, and the sense of wonder that comes from exploring a beautifully crafted world.</p>
+
+                <p><em>May the forest guide you on your own legendary adventure!</em></p>
+            </div>
+        </article>
+
+         <article class="blog-post">
+            <div class="blog-post-header">
+                <h2 class="blog-post-title">About Me</h2>
+                <div class="blog-post-meta">
+                    <span>📅 January 10, 2026</span>
+                    <span>👤 Anjai</span>
+                    <span>🎮 Gaming</span>
+                </div>
+            </div>
+            <div class="blog-post-content">
+               <h3>I'm 7 years old and 2024 was my favorite year because i got to go on holiday 7 times.</h3>
+            </div>
+        </article>
+
+        <!-- More Blog Posts Preview -->
+        <h2 style="color: var(--gold); margin-top: 60px; margin-bottom: 30px; font-size: 2rem; text-align: center;">More Adventures</h2>
+        <div class="blog-posts-grid">
+            <div class="blog-card">
+                <h3 class="blog-card-title">🌳 Building in Minecraft</h3>
+                <p class="blog-card-excerpt">Discover the creative possibilities of Minecraft and learn how to create amazing structures. From cozy cottages to grand castles, there's no limit to what you can build in this magical sandbox world.</p>
+                <div class="blog-card-date">📅 January 5, 2026</div>
+            </div>
+
+            <div class="blog-card">
+                <h3 class="blog-card-title">🗺️ Exploring Hidden Secrets</h3>
+                <p class="blog-card-excerpt">Every corner of Hyrule holds secrets. In this post, I share some of my favorite discoveries and tips for finding hidden shrines, treasure chests, and mysterious locations that most players miss.</p>
+                <div class="blog-card-date">📅 December 28, 2025</div>
+            </div>
+
+            <div class="blog-card">
+                <h3 class="blog-card-title">⚔️ Mastering Combat Techniques</h3>
+                <p class="blog-card-excerpt">Learn advanced combat strategies to take down even the toughest enemies. From shield parrying to weapon combinations, become a true warrior of the realm with these essential techniques.</p>
+                <div class="blog-card-date">📅 December 15, 2025</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Anjai's World. All rights reserved. May the forest guide you.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
