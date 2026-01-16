@@ -39,8 +39,8 @@ title: Home
             </div>
             <div class="about-features">
                 <div class="feature-card">
-                    <div class="feature-icon">🛡️</div>
-                    <h3>Protection</h3>
+                    <div class="feature-icon">👨🏽‍👩🏽‍👦🏽</div>
+                    <h3>My Family</h3>
                     <p>Guarding the sacred forest</p>
                 </div>
                 <div class="feature-card">
@@ -62,7 +62,7 @@ title: Home
 <div class="parallax-item" style="background-image: url('{{ site.baseurl }}/img/1345954.png')"></div>
 
 <!-- Adventures Section -->
-<section id="services" class="services">
+<section id="adventures" class="services">
     <div class="container">
         <h2 class="section-title">Adventures</h2>
         <div class="services-grid">
