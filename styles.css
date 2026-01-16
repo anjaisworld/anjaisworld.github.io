@@ -762,7 +762,7 @@ section {
     position: relative;
     height: 60vh;
     min-height: 400px;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -792,7 +792,6 @@ section {
 
 @media (max-width: 768px) {
     .parallax-item {
-        background-attachment: scroll;
         height: 45vh;
         min-height: 300px;
     }
@@ -800,7 +799,6 @@ section {
 
 @media (max-width: 480px) {
     .parallax-item {
-        background-attachment: scroll;
         height: 40vh;
         min-height: 250px;
     }

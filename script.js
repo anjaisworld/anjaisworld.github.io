@@ -119,6 +119,27 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Parallax effect for parallax items (works on all devices)
+window.addEventListener('scroll', () => {
+    const parallaxItems = document.querySelectorAll('.parallax-item');
+    
+    parallaxItems.forEach(item => {
+        const rect = item.getBoundingClientRect();
+        const scrollPosition = window.pageYOffset;
+        const elementOffset = item.offsetTop;
+        
+        // Calculate parallax speed (slower on mobile)
+        const isMobile = window.innerWidth <= 768;
+        const parallaxSpeed = isMobile ? 0.3 : 0.5;
+        
+        // Only apply parallax when element is in view
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            const yPos = (scrollPosition - elementOffset) * parallaxSpeed;
+            item.style.backgroundPosition = `center ${yPos}px`;
+        }
+    });
+});
+
 // Add more floating leaves dynamically
 function createFloatingLeaf() {
     const leaf = document.createElement('div');
