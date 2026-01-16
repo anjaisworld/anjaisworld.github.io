@@ -1,0 +1,44 @@
+# Jekyll Configuration for Anjai's World
+
+# Site Settings
+title: Anjai's World
+description: A mystical journey through Anjai's World - adventures with Zelda and Minecraft
+author: Anjai
+url: https://anjaisworld.github.io
+baseurl: ""
+
+# Theme settings
+theme: null  # We're using custom theme
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - README.md
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /blog/:title/
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"

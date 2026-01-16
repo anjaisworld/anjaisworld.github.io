@@ -1,0 +1,130 @@
+---
+layout: home
+title: Home
+---
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1 class="hero-title">
+                <span class="title-line">Welcome to</span>
+                <span class="title-main">Anjai's World</span>
+            </h1>
+            <p class="hero-subtitle">A mystical journey through the Anjai's World</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">Begin Adventure</a>
+                <a href="#gallery" class="btn btn-secondary">Explore</a>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <div class="rupee rupee-1">💎</div>
+            <div class="rupee rupee-2">💎</div>
+            <div class="rupee rupee-3">💎</div>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">About Anjai's World</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I like playing Zelda and Minecraft.</p>
+                <p>Zelda is very creative and there's a big story ahead of you.</p>
+            </div>
+            <div class="about-features">
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Protection</h3>
+                    <p>Guarding the sacred forest</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Magic</h3>
+                    <p>Ancient wisdom and power</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌳</div>
+                    <h3>Nature</h3>
+                    <p>Harmony with the forest</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Parallax Image 1 -->
+<div class="parallax-item" style="background-image: url('{{ site.baseurl }}/img/1345954.png')"></div>
+
+<!-- Adventures Section -->
+<section id="services" class="services">
+    <div class="container">
+        <h2 class="section-title">Adventures</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🗡️</div>
+                <h3>Adventure guides.</h3>
+                <p>Adventure guides is my adventures, where I gone</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💎</div>
+                <h3>Treasure Hunting</h3>
+                <p>Discover hidden rupees and ancient artifacts</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🧙</div>
+                <h3>Ancient Wisdom</h3>
+                <p>Learn the secrets of the Kokiri and their magic</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎯</div>
+                <h3>Quest Assistance</h3>
+                <p>Help completing your most challenging quests</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Parallax Image 2 -->
+<div class="parallax-item" style="background-image: url('{{ site.baseurl }}/img/1363281.jpeg')"></div>
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery">
+    <div class="container">
+        <h2 class="section-title">Forest Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <div class="gallery-image gallery-1"></div>
+                <div class="gallery-overlay">
+                    <h3>Sacred Grove</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image gallery-2"></div>
+                <div class="gallery-overlay">
+                    <h3>Ancient Ruins</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image gallery-3"></div>
+                <div class="gallery-overlay">
+                    <h3>Mystical Paths</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image gallery-4"></div>
+                <div class="gallery-overlay">
+                    <h3>Forest Temple</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Parallax Image 3 -->
+<div class="parallax-item" style="background-image: url('{{ site.baseurl }}/img/huhsoo-03.jpg')"></div>

@@ -175,4 +175,3 @@ document.addEventListener('click', (e) => {
 // Console easter egg
 console.log('%c🌿 Welcome to Anjais world 🌿', 'color: #7fb347; font-size: 20px; font-weight: bold;');
 console.log('%cMay the forest guide you on your journey!', 'color: #d4af37; font-size: 14px;');
-
